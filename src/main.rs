@@ -1,20 +1,28 @@
-use std::collections::btree_map::Range;
-
 fn main() {
-    let tup = (false, 1, 2.0, '3', "4");
+    // let tup: [u8; 3] = if true {
+    //     let tup_inner: [u8; 3] = [1, 2, 3];
+    //     tup_inner
+    // } else {
+    //     return;
+    // };
 
-    let (zero, one, two, three, four) = tup;
+    // // let mut couinter: u8 = 0;
+    // // let round: u8 = loop {
+    // //     if couinter < tup.len() as u8 {
+    // //         println!("{}", tup[couinter as usize]);
+    // //         couinter += 1;
+    // //     } else {
+    // //         break couinter;
+    // //     }
+    // // };
 
-    println!("{} {} {} {} {}", zero, one, two, three, four);
-    println!("{}", tup.4);
+    // // println!("Loop for Round {}", round);
 
-    // let a: Vec<T> = vec![zero, one, two, three, four];
+    // for element in tup {
+    //     println!("{element}");
+    // }
+    let s1 = String::from("hello");
+    let s2 = s1;
 
-    let a = ["zero", "one", "two", "three", "four"];
-
-    let mut agen = a.rchunks(2);
-
-    for _ in a {
-        println!("{:#?}", agen.next());
-    };
+    println!("{}, world!", s1);
 }
